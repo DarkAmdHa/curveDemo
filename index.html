@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      box-sizing: border-box;
+      padding: 0;
+    }
+    body {
+      background-color: #21a8c7;
+      width: 100vw;
+      height: 100vh;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .curve1,
+    .curve2 {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 200%;
+      display: flex;
+      transition: 0.5s linear;
+    }
+
+    .curve1 {
+      animation-name: curveMove1;
+      animation-duration: 10s;
+      animation-iteration-count: infinite;
+    }
+
+    .curve2 {
+      left: -100%;
+      animation-name: curveMove2;
+      animation-duration: 10s;
+      animation-iteration-count: infinite;
+    }
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+
+    .curve1 svg:last-child,
+    .curve2 svg:last-child {
+      transform: rotateY(180deg);
+    }
+    /* The animation code */
+    @keyframes curveMove1 {
+      from {
+        transform: translateX(0);
+      }
+      to {
+        transform: translateX(-50%);
+      }
+    }
+
+    @keyframes curveMove2 {
+      from {
+        transform: translateX(0);
+      }
+      to {
+        transform: translateX(50%);
+      }
+    }
+  </style>
+  <body>
+    <div class="curve1">
+      <svg
+        width="1920"
+        height="351"
+        viewBox="0 0 1920 351"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          opacity="0.2"
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M0 346.051L80 288.376C160 230.701 320 115.35 480 105.738C640 96.1253 800 192.251 960 259.538C1120 326.826 1280 365.276 1440 346.051C1600 326.826 1760 249.926 1840 211.476L1920 173.026V0H1840C1760 0 1600 0 1440 0C1280 0 1120 0 960 0C800 0 640 0 480 0C320 0 160 0 80 0H0V346.051Z"
+          fill="#7CD5E9"
+        />
+      </svg>
+      <svg
+        width="1920"
+        height="351"
+        viewBox="0 0 1920 351"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          opacity="0.2"
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M0 346.051L80 288.376C160 230.701 320 115.35 480 105.738C640 96.1253 800 192.251 960 259.538C1120 326.826 1280 365.276 1440 346.051C1600 326.826 1760 249.926 1840 211.476L1920 173.026V0H1840C1760 0 1600 0 1440 0C1280 0 1120 0 960 0C800 0 640 0 480 0C320 0 160 0 80 0H0V346.051Z"
+          fill="#7CD5E9"
+        />
+      </svg>
+    </div>
+    <div class="curve2">
+      <svg
+        width="1920"
+        height="498"
+        viewBox="0 0 1920 498"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          opacity="0.2"
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M0 459.692L80 469.269C160 478.846 320 498 480 498C640 498 800 478.846 960 402.231C1120 325.615 1280 191.538 1440 134.077C1600 76.6154 1760 95.7692 1840 105.346L1920 114.923V0H1840C1760 0 1600 0 1440 0C1280 0 1120 0 960 0C800 0 640 0 480 0C320 0 160 0 80 0H0V459.692Z"
+          fill="#7CD5E9"
+        />
+      </svg>
+      <svg
+        width="1920"
+        height="498"
+        viewBox="0 0 1920 498"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          opacity="0.2"
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M0 459.692L80 469.269C160 478.846 320 498 480 498C640 498 800 478.846 960 402.231C1120 325.615 1280 191.538 1440 134.077C1600 76.6154 1760 95.7692 1840 105.346L1920 114.923V0H1840C1760 0 1600 0 1440 0C1280 0 1120 0 960 0C800 0 640 0 480 0C320 0 160 0 80 0H0V459.692Z"
+          fill="#7CD5E9"
+        />
+      </svg>
+    </div>
+  </body>
+</html>
